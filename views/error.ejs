@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <!-- Add your CSS imports here -->
+</head>
+<body>
+    <h1>Error</h1>
+    <p>An error occurred:</p>
+    <pre><%= message %></pre>
+    <% if (error.status) { %>
+        <h2>Status:</h2>
+        <p><%= error.status %></p>
+    <% } %>
+    <% if (error.stack) { %>
+        <h2>Stack Trace:</h2>
+        <pre><%= error.stack %></pre>
+    <% } %>
+    <!-- Add any additional error information you want to display -->
+</body>
+</html>
