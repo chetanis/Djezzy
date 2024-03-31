@@ -101,7 +101,7 @@
                 onmouseout="this.style.color='initial'"
                 href="../../pages/examples/profile.html"
                 class="d-block"
-                >Username</a
+                ><%= session.user.full_name %></a
               >
             </div>
           </div>
@@ -1458,7 +1458,7 @@
     <script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
     <script src="plugins/jquery-mapael/maps/usa_states.min.js"></script> -->
     <!-- ChartJS -->
-    <!-- <script src="plugins/chart.js/Chart.min.js"></script> -->
+    <script src="chart.js/Chart.min.js"></script>
 
     <!-- <script src="dist/js/demo.js"></script> -->
     <script src="javascripts/pages/dashboard2.js"></script>
