@@ -14,7 +14,7 @@ Before running this application, make sure you have the following installed:
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/chetanis/Djezzy.git
     ```
 
 2. Navigate to the project directory:
@@ -31,8 +31,21 @@ Before running this application, make sure you have the following installed:
 
 4. Set up the MySQL database:
 
-    - Create a new database.
-    - Update the database configuration in `db.js` with your MySQL credentials.
+   - Create a new database.
+   - In the database, create a table named `users` with the following structure:
+
+     ```sql
+     CREATE TABLE users (
+         id INT AUTO_INCREMENT PRIMARY KEY,
+         email VARCHAR(255) NOT NULL,
+         password VARCHAR(255) NOT NULL,
+         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+         full_name VARCHAR(255)
+     );
+     ```
+
+   - Update the database configuration in `db.js` with your MySQL credentials.
+
 
 5. Start the application:
 
