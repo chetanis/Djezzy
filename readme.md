@@ -20,7 +20,7 @@ Before running this application, make sure you have the following installed:
 2. Navigate to the project directory:
 
     ```bash
-    cd your-repo
+    cd Djezzy
     ```
 
 3. Install the dependencies:
