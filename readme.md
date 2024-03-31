@@ -14,13 +14,13 @@ Before running this application, make sure you have the following installed:
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/chetanis/Djezzy.git
+    git clone https://github.com/chetanis/Login-Register-System.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd Djezzy
+    cd Login-Register-System
     ```
 
 3. Install the dependencies:
