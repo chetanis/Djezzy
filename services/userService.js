@@ -20,6 +20,16 @@ async function authenticateUser(email, password) {
     }
 }
 
+async function registerUser(full_name, email, password) {
+    try {
+        const [rows] = await pool.query('INSERT INTO users (full_name, email, password) VALUES (?, ?, ?)', [full_name, email, password]);
+        return rows.insertId;
+    } catch (error) {
+        console.error('Error in registerUser:', error);
+        throw error; // Propagate the error to the caller
+    }
+}
+
 module.exports = {
-    authenticateUser
+    authenticateUser,registerUser
 };
